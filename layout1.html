@@ -4,10 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" src="icon.jpg">
-    <title>Document</title>
+    
+    <title>Layout 1</title>
+    <link rel="shortcut icon" href="icon2.png" type="image/x-icon" />
+    <link rel="stylesheet" href="layout1.css"/>
 </head>
 <body>
-    
+    <form action="test.php" method="post">
+        <fieldset>
+          <legend>Dados pessoais</legend>
+          <div class="data-pessoal">
+          Nome:<input type="text"><br>
+          Endereço:<input type="text"><br>
+          Cidade:<input type="text"><br>
+          Estado:<select name="estado" id="estado">
+              <option value="sp">São Paulo</option>
+              <option value="am">Amazonas</option>
+              <option value="mg">Minas Gerais</option>
+              <option value="rj">Rio de Janeiro</option>
+            </select>
+        </div>
+    </fieldset><br>
+    <fieldset>
+        <legend>Dados profissionais</legend>
+        <div class="data-pessoal">
+        Natureza do cargo<br>
+        <input type="radio" name="radio" id="1"> <label for="radio1">Gerência</label>
+        <input type="radio" name="radio" id="2"> <label for="radio2">Financeiro</label>
+        <input type="radio" name="radio" id="3"> <label for="radio3">Recepção</label>
+        <input type="radio" name="radio" id="4"> <label for="radio4">Administrativo</label>
+        <input type="radio" name="radio" id="5"> <label for="radio5">Jurídico</label>
+        <br><br>
+        Área de interesse<br>
+        <input type="checkbox" > <label for="checkbox">Computação</label>
+        <input type="checkbox" > <label for="checkbox">Biologia</label>
+        <input type="checkbox" > <label for="checkbox">Meio Ambiente</label>
+        <input type="checkbox" > <label for="checkbox">Engenharia</label>
+        <input type="checkbox" > <label for="checkbox">História</label>
+        <br><br>
+        Mini-curriculo:<textarea rows="5" cols="45"></textarea>
+    </fieldset>
+      </form><br>
+      <input type="submit" value="Enviar"><span>    </span><input type="submit" value="Limpar">
 </body>
 </html>
