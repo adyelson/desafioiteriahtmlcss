@@ -29,20 +29,22 @@
     align-items: center;
     justify-content: center;
     padding: 0 15px 0 15px;
+    position:relative;
 }
 
 .subitem{
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
     height: 50px;
     padding: 15px 5px 15px 5px;
-    min-width: 50px;
-    max-width: 90px;
+    width: 100%;
     height: 50px; 
 }
 
 .subitem:hover{
-    
+    cursor: pointer;
     color: #65AC4A;
     
 }
@@ -50,14 +52,16 @@
 .subhr{
     width: 100%;
     margin: 0;
+    border-color: #2D2E32;
+    color: #2D2E32;
 }
 .popupmenu{
     align-items: center;
     justify-content: center;
     display: none;
     flex-direction: column;
-    position:inherit;
-    left: 200px;
+    position:absolute;
+    left: 0;
     top:50px;
     
     background-color: #1F2024;
@@ -69,12 +73,17 @@
 } 
 
 .item:hover{
-    
+    cursor: pointer;
     color: #65AC4A;
     
 }
 
-.item:hover + .popupmenu, .popupmenu:hover{
-    display: flex;       
+.item:hover .popupmenu, .popupmenu:hover{
+    display: flex;    
+    cursor: pointer;   
     
+}
+.subhr2{
+    margin: 10px;
+	border-color: #757781;
 }
