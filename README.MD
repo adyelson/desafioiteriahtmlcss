@@ -1,3 +1,1 @@
-cross game
-
-[a link](adyelson.github.io/desafioiteriahtmlcss/)
+[Jogo da velha](adyelson.github.io/desafioiteriahtmlcss/)
